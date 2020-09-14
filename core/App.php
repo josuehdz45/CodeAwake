@@ -6,7 +6,7 @@
      * | Clase general para acceder |
      * +----------------------------+
      * 
-     * @author Josué Hernández
+     * @author CodeAwake
      * @license MIT
      */
     class App{
@@ -46,7 +46,7 @@
                 }else{
                     include_once "app/controllers/{$route}.controller.php";
                 }
-            }catch(Exception $e){
+            }catch(\Exception $e){
                 print($e->getMessage());
             }
         }

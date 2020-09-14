@@ -1,5 +1,4 @@
 <?php
-    use Core\Kernel\Kernel;
     /**
      * Here are all the fundamental files for the framework to work...
      * 
@@ -9,7 +8,8 @@
     define("DEFAULT_DIR", __DIR__);
     
     $kernel = new Core\Kernel\Kernel();
-    // General files
+
+    // Vendor and core files
     $kernel->autoload([
         DEFAULT_DIR."/config/db/database.php",
         DEFAULT_DIR."/vendor/smarty/Smarty.class.php",
@@ -29,4 +29,5 @@
 
     $kernel->autoload([
         DEFAULT_DIR."/routes/web.php",
+        DEFAULT_DIR."/routes/rest.php"
     ]);

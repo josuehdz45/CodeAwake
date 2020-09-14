@@ -2,19 +2,15 @@
 	use Core\App\App;
 	
 	/**
-	 * +------------------------------+
-     * | Declara las rutas cortas que |
-	 * | usaras para este proyecto    |
-	 * +------------------------------+
-     * @author Josué Hernández
+	 * Declara las rutas cortas que usaras para este proyecto
+	 * 
+     * @author CodeAwake
      * @package routes
      */
 	$router = new Router\Router();
+
     /**
-	 * +-----------------------------------+
-     * | Index route - Mostramos una vista |
-	 * | cuando se entre a esta ruta       |
-	 * +-----------------------------------+
+	 * Index route - Mostramos una vista cuando se entre a esta ruta
 	 * @param string PATH
 	 * @param callback VIEW OR QUERY
      */
@@ -23,10 +19,8 @@
     });
 
     /**
-	 * +----------------------------------+
-     * | Obtenemos un valor especifico de | 
-	 * | una ruta                         |
-	 * +----------------------------------+
+	 * Obtenemos un valor especifico de una ruta
+	 * 
 	 * @param string PATH
 	 * @param callback VIEW OR QUERY RETURN A VALUE
      */
@@ -35,10 +29,8 @@
     });    
 
     /**
-	 * +-----------------------------------+
-     * | Ruta que especifica que no existe |
-	 * | una ruta                          |
-	 * +-----------------------------------+
+	 * Ruta que especifica que no existe una ruta
+	 * 
 	 * @param string PATH
 	 * @param callback VIEW OR QUERY
      */

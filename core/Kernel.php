@@ -76,7 +76,7 @@
                     else{
                         throw new \Exception("The file not exist - File route: ".$key);
                     }
-                }catch(Exception $e){
+                }catch(\Exception $e){
                     print("You have an error: ".$e->getMessage());
                 }
             }

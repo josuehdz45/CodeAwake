@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteRule ^(.*)$ index.php/$1 [L]
+
+    #Forbidden
+    Options All -Indexes
+
+    RewriteRule ^403/?$ app/routes/403.php [L]
+
+    ErrorDocument 403 /403
+</IfModule>

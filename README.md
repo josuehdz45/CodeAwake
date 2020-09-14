@@ -12,3 +12,7 @@
 		print("This is your error: ".$e->error_get());
 	}
 </code>
+
+
+## Requeriments
+add a new directory and call it build/ there are the compiled files that smarty generates

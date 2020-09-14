@@ -9,5 +9,6 @@
 	 * Include a template manager, in order to identify where the user wants to enter
 	 */
 	require_once 'core/Kernel.php';
-	require_once 'AutoLoader.php';
+	require_once 'autoload.php';
 	$kernel = new Core\Kernel\Kernel();
+?>
